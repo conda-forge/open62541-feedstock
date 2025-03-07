@@ -35,6 +35,11 @@ test:
     - if not exist %PREFIX%\\Library\\lib\\open62541.lib exit 1  # [win]
     - if not exist %PREFIX%\\Library\\bin\\open62541.dll exit 1  # [win]
     - if not exist %PREFIX%\\Library\\lib\\cmake\\open62541\\open62541Config.cmake exit 1  # [win]
+    - cmake-package-check open62541
+  requires:
+    - cmake-package-check
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
 
 about:
   home: https://github.com/open62541/open62541

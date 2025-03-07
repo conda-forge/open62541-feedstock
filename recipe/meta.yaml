@@ -1,5 +1,5 @@
 {% set name = "open62541" %}
-{% set version = "1.3.9" %}
+{% set version = "1.4.10" %}
 
 package:
   name: {{ name }}
@@ -10,13 +10,14 @@ source:
     sha256: 71764d4a060cfa07eae7aaabd176da38b155ef01c63103513339699fd8026e2f
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x.x') }}
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
     - make                               # [not win]
     - cmake

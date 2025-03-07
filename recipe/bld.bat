@@ -2,7 +2,8 @@ mkdir build
 cd build
 
 cmake ^
-    -G "NMake Makefiles" ^
+    -G "Ninja" ^
+    %CMAKE_ARGS% ^
     -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
     -DCMAKE_PREFIX_PATH=%LIBRARY_PREFIX% ^
     -DCMAKE_BUILD_TYPE=Release ^

@@ -19,13 +19,11 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
     - {{ compiler('cxx') }}
-    - make                               # [not win]
     - cmake
     - python
   host:
     - openssl
-  run:
-    - openssl
+
 
 test:
   commands:

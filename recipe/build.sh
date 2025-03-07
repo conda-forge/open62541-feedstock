@@ -14,5 +14,5 @@ cmake -GNinja ${CMAKE_ARGS} -DCMAKE_INSTALL_PREFIX=$PREFIX \
       -DUA_ARCH_REMOVE_FLAGS="-Werror" \
       $SRC_DIR
 
-make -j${CPU_COUNT}
-make install
+cmake --build . --config Release
+cmake --install . --config Release

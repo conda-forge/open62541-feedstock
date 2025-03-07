@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/open62541/open62541/archive/v{{ version }}.tar.gz
-    sha256: 71764d4a060cfa07eae7aaabd176da38b155ef01c63103513339699fd8026e2f
+    sha256: 1a2e762e50bb6dae8d80029dfb66fdbc432876a004e62d618f7cf1bb5b4f495f
 
 build:
   number: 0

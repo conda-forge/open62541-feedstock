@@ -1,5 +1,5 @@
 {% set name = "open62541" %}
-{% set version = "1.4.10" %}
+{% set version = "1.4.11.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/open62541/open62541/archive/v{{ version }}.tar.gz
-    sha256: 1a2e762e50bb6dae8d80029dfb66fdbc432876a004e62d618f7cf1bb5b4f495f
+    sha256: 2979c0f09b766fd6470bdf06c8500c90ed51327aae1c22af132641a44178b722
 
 build:
   number: 0

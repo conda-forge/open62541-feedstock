@@ -22,7 +22,7 @@ requirements:
     - ${{ compiler('cxx') }}
     - ninja
     - cmake
-    - python
+    - python *
   host:
     - openssl
   run_exports:

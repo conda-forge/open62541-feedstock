@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: open62541
-  version: "1.4.13"
+  version: "1.4.14"
 
 package:
   name: ${{ name }}
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://github.com/open62541/open62541/archive/v${{ version }}.tar.gz
-    sha256: 491f8c526ecd6f2240f29cf3a00b0498587474b8f0ced1b074589f54533542aa
+    sha256: 0a0a8830e4e5f720e901579f826c788fdbc3d49f44a9515ab15a06e877b59416
 
 build:
   number: 0
